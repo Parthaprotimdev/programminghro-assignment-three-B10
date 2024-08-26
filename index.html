@@ -24,104 +24,130 @@
       .manrope-regular {
         font-family: "Manrope", sans-serif;
       }
+      .hero-bg {
+        background-image: linear-gradient(
+          0deg,
+          #fff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
       .partha {
         border: 1px solid red;
       }
     </style>
   </head>
-  <body class="manrope-regular mx-auto">
+  <body class="manrope-regular bg-[#F4F4F4]">
+    <!-- Header Section -->
     <header>
-      <nav class="max-w-6xl mx-auto">
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <a class="btn btn-ghost text-3xl font-extrabold text-[#212121]"
-              ><svg
+      <nav
+        class="max-w-[1170px] mx-auto px-[1.25rem] md:px-8 min-[1170px]:px-0"
+      >
+        <div class="flex items-center justify-between">
+          <div class="">
+            <a class="text-3xl font-extrabold text-[#212121]">
+              <!-- logo -->
+              <div
+                class="btn btn-circle btn-sm bg-[#ABEF5F] hover:bg-[#ABEF5F]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </div>
+              Rinterio</a
+            >
+          </div>
+
+          <!-- menu -->
+          <ul class="menu menu-horizontal hidden lg:flex">
+            <li><a class="text-[#494949] font-extrabold">Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+
+          <div class="flex items-center gap-x-4">
+            <!-- search icon -->
+            <div
+              class="hidden min-[600px]:flex btn btn-circle btn-sm bg-white border border-solid border-[#E9E9E9] hover:bg-white"
+            >
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6"
+                class="size-5"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
                 />
               </svg>
-              Rinterio</a
+            </div>
+            <!-- shopping-cart -->
+            <div
+              class="hidden min-[600px]:flex btn btn-circle btn-sm bg-white border border-solid border-[#E9E9E9] hover:bg-white"
             >
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a class="text-[#494949] font-extrabold">Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="space-x-2 navbar-end justify-between">
-            <!-- search icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-              />
-            </svg>
-            <!-- shoping-cart -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-              />
-            </svg>
-
-            <button
-              class="bg-lime-400 px-[1.5rem] py-[.75rem] rounded-[2rem] mx-auto flex justify-center items-center gap-2 border border-[#ABEF5F] text-[#1C1C1C] font-extrabold"
-            >
-              Book Consult
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
                 fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4"
               >
                 <path
-                  d="M12.0016 1.74121L0.997989 12.7375"
-                  stroke="#1C1C1C"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M6.00191 0.87079C6.00191 0.87079 11.6356 0.397774 12.4903 1.25297C13.3449 2.10817 12.868 7.74156 12.868 7.74156"
-                  stroke="#1C1C1C"
-                  stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
                 />
               </svg>
+            </div>
+
+            <button
+              class="hidden min-[600px]:flex bg-lime-400 px-[1.5rem] py-[.75rem] rounded-[2rem] mx-auto justify-center items-center gap-2 border border-[#ABEF5F] text-[#1C1C1C] font-extrabold"
+            >
+              Book Consult
+              <div
+                class="btn btn-circle btn-sm bg-black hover:bg-black border-none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-white size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </div>
             </button>
-            <div class="dropdown">
-              <!-- lg:hidden -->
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+
+            <!-- Mobile Menu -->
+            <div class="dropdown dropdown-left lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-circle btn-sm bg-white border border-solid border-[#E9E9E9] hover:bg-white"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -139,25 +165,93 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                class="space-y-2 menu menu-md dropdown-content bg-base-200 rounded-box z-[1] mt-10 w-52 p-2 shadow"
               >
                 <li><a>Home</a></li>
                 <li><a>Services</a></li>
                 <li><a>Portfolio</a></li>
                 <li><a>Blogs</a></li>
                 <li><a>Contact Us</a></li>
+                <li>
+                  <div
+                    class="min-[600px]:hidden w-full btn btn-circle btn-sm bg-white border border-solid border-[#E9E9E9] hover:bg-white"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                      />
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="min-[600px]:hidden w-full btn btn-circle btn-sm bg-white border border-solid border-[#E9E9E9] hover:bg-white"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                      />
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <button
+                    class="min-[600px]:hidden bg-lime-400 px-[1.5rem] py-[.75rem] rounded-[2rem] mx-auto justify-center items-center gap-2 border border-[#ABEF5F] text-[#1C1C1C] font-extrabold"
+                  >
+                    Book Consult
+                    <div
+                      class="btn btn-circle btn-sm bg-black hover:bg-black border-none"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="text-white size-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
+
       <!-- banner Section -->
-      <section
-        class="mx-w-6xl bg-[linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);] mx-auto"
-      >
-        <div class="flex flex-col justify-center items-center">
-          <div>
-            <img src="./assets/banner.png" alt="" />
+      <section class="hero-bg">
+        <div
+          class="pt-[2rem] pb-[2.49rem] md:pt-[3rem] md:pb-[4.48rem] lg:pt-[2.49rem] lg:pb-[6.27rem] max-w-[1170px] mx-auto px-[1.25rem] md:px-8 min-[1170px]:px-0 flex flex-col justify-center items-center"
+        >
+          <div
+            class="maw-w-[16.31913rem] md:max-w-[26.51863rem] lg:max-w-[35.69813rem]"
+          >
+            <img class="max-w-full h-auto" src="./assets/banner.png" alt="" />
           </div>
           <div class="w-[67.76] text-center">
             <h1 class="my-6 text-6xl text-[rgba(33, 33, 33, 1)]">
@@ -171,7 +265,7 @@
               light.
             </p>
             <button
-              class="bg-lime-300 px-[1.5rem] py-[.75rem] rounded-[2rem] mx-auto mb-[6rem] flex justify-center items-center gap-2 border border-[#ABEF5F]"
+              class="bg-lime-300 px-[1.5rem] py-[.75rem] rounded-[2rem] mx-auto flex justify-center items-center gap-2 border border-[#ABEF5F]"
             >
               View Details
               <svg
