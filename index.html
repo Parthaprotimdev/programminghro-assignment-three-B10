@@ -31,9 +31,6 @@
           rgba(255, 255, 255, 0) 100%
         );
       }
-      .partha {
-        border: 1px solid red;
-      }
     </style>
   </head>
   <body class="manrope-regular bg-[#F4F4F4]">
@@ -756,19 +753,44 @@
       </section>
     </main>
 
-    <!-- up done with responsive -->
+    <!-- Footer Section -->
 
     <footer
-      class="mx-auto footer bg-neutral text-neutral-content flex flex-col items-center pt-20"
+      class="mx-auto footer bg-neutral text-neutral-content flex flex-col items-center py-16"
     >
-      <div class="w-[42.39rem] flex flex-col items-center">
-        <h2 class="text-4xl font-extrabold text-[#E9E9E9]">Rinterio</h2>
-        <p class="text-base text-center text-[#737373]">
+      <div
+        class="w-[42.39rem] flex flex-col items-center gap-y-4 pt[4.5rem] md:pt-[6.25rem]"
+      >
+        <a
+          class="btn btn-ghost text-[1.75rem] leading:[2.375] md:text-[2rem] md:leading-[2.75rem] font-extrabold text-[#E9E9E9]"
+        >
+          <div class="btn btn-circle btn-sm bg-[#ABEF5F] hover:bg-[#ABEF5F]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </div>
+          Rinterio</a
+        >
+
+        <p
+          class="max-w-[19.73rem] lg:max-w-[42.39rem] font-medium text-base text-center text-[#737373]"
+        >
           The barn house captivates with its blend of rustic charm and modern
           sophistication, featuring weathered wood, sleek metal accents.
         </p>
       </div>
-      <div class="text-[#E9E9E9] md:flex gap-28">
+      <div class="text-[#E9E9E9] md:flex gap-x-28 gap-y-8">
         <a class="link link-hover">Home</a>
         <a class="link link-hover">Services</a>
         <a class="link link-hover">Portfolio</a>
@@ -777,30 +799,25 @@
       </div>
 
       <button
-        class="bg-[#ABEF5F] px-[1.5rem] py-[.75rem] rounded-[2rem] mx-auto mb-[6rem] flex justify-center items-center gap-2 text-black font-extrabold"
+        class="hidden min-[600px]:flex bg-lime-400 px-[1.5rem] py-[.75rem] rounded-[2rem] mx-auto justify-center items-center gap-2 border border-[#ABEF5F] text-[#1C1C1C] font-extrabold"
       >
         Book Consult
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="14"
-          height="14"
-          viewBox="0 0 14 14"
-          fill="none"
-        >
-          <path
-            d="M12.0016 1.74121L0.997989 12.7375"
-            stroke="#1C1C1C"
+        <div class="btn btn-circle btn-sm bg-black hover:bg-black border-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
             stroke-width="1.5"
-            stroke-linecap="round"
-          />
-          <path
-            d="M6.00191 0.87079C6.00191 0.87079 11.6356 0.397774 12.4903 1.25297C13.3449 2.10817 12.868 7.74156 12.868 7.74156"
-            stroke="#1C1C1C"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+            stroke="currentColor"
+            class="text-white size-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </div>
       </button>
     </footer>
   </body>
