@@ -297,33 +297,35 @@
     <main>
       <!-- about us -->
       <section
-        class="flex flex-row justify-between items-center gap-8 px-[4rem] py-[4rem] bg-[#F4F4F4] w-full mx-auto"
+        class="max-w-[1170px] mx-auto px-[1.25rem] md:px-8 min-[1170px]:px-0 py-8 md:py-[4rem] lg:py-[3rem] flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-8"
       >
         <div>
-          <div class="card-body">
-            <div class="card-actions justify-start">
-              <button class="btn rounded-3xl px-4 bg-[#FFF]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                  />
-                </svg>
-                About Us
-              </button>
-            </div>
-            <h2 class="card-title max-w-[29.38rem] text-4xl font-bold mb-4">
+          <div
+            class="mb-6 flex flex-col justify-center items-center lg:items-start gap-6"
+          >
+            <button class="badge text-[1rem] font-bold px-3 h-9 gap-2 bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+              About Us
+            </button>
+            <h2
+              class="max-w-[29.38rem] text-center lg:text-left text-4xl font-bold mb-4"
+            >
               We design thoughtful, liveable spaces
             </h2>
-            <p>
+            <p class="text-center lg:text-left">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents.
@@ -358,18 +360,23 @@
           </div>
         </div>
 
-        <div>
-          <img src="./assets/Rectangle.png" alt="" />
+        <div class="w-full md:h-[24.0625rem] lg:h-full relative">
+          <img
+            class="w-full h-full object-cover rounded-2xl"
+            src="./assets/Rectangle.png"
+            alt=""
+          />
         </div>
       </section>
 
-      <!-- Work Our Process -->
+      <!-- Our Work Process -->
 
-      <!-- =============================== -->
-      <div class="mx-auto bg-[#F4F4F4] w-full pb-12">
+      <div
+        class="max-w-[1170px] mx-auto px-[1.25rem] md:px-8 min-[1170px]:px-0 py-8 md:py-[4rem] lg:py-[6.25rem]"
+      >
         <div class="card mx-w[1440px]">
           <div class="card-actions justify-center mx-[1.5rem] my-[1.5rem]">
-            <button class="btn rounded-3xl bg-[#FFF] my-[1rem]">
+            <button class="btn rounded-3xl text-[1rem] font-bold bg-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -388,8 +395,14 @@
             </button>
           </div>
           <div class="card-body items-center">
-            <h2 class="card-title text-4xl font-bold">Our Works Process</h2>
-            <div class="text-center mx-auto w-[42.83rem]">
+            <h2
+              class="card-title text-4xl font-bold md:text-[2rem] md:leading-[2.75rem] lg:text-[2.5rem] lg:leading-[3.5rem]"
+            >
+              Our Works Process
+            </h2>
+            <div
+              class="mt-2 mb-4 w-full max-w-[41rem] font-medium text-center text-[0.875rem] leading-[1.5rem] md:text-[1rem] md:leading-[1.625rem]"
+            >
               <p>
                 The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal
@@ -399,41 +412,39 @@
           </div>
         </div>
         <!--  Four card -->
-        <div class="w-[1170px] mx-auto space-x-4 flex justify-between my-9">
-          <div
-            class="w-[17.18rem] rounded-2xl bg-[#E7C1D3] p-[1.5rem] space-y-[.62rem]"
-          >
-            <img src="./assets/concept.png" alt="" />
+        <div
+          class="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-6 lg:grid-cols-4"
+        >
+          <div class="rounded-2xl bg-[#E7C1D3] p-[1.5rem] space-y-[.62rem]">
+            <img class="size-[3rem]" src="./assets/concept.png" alt="" />
             <h4 class="text-xl font-extrabold">Concept</h4>
             <p>
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
           </div>
-          <div
-            class="w-[17.18rem] rounded-2xl bg-[#EFDA6E] p-[1.5rem] space-y-[.62rem]"
-          >
-            <img src="./assets/flow-chart.png" alt="" />
+          <div class="rounded-2xl bg-[#EFDA6E] p-[1.5rem] space-y-[.62rem]">
+            <img class="size-[3rem]" src="./assets/flow-chart.png" alt="" />
             <h4 class="text-xl font-extrabold">Design Process</h4>
             <p>
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
           </div>
-          <div
-            class="w-[17.18rem] rounded-2xl bg-[#A4DAC3] p-[1.5rem] space-y-[.62rem]"
-          >
-            <img src="./assets/budget-planning.png" alt="" />
+          <div class="rounded-2xl bg-[#A4DAC3] p-[1.5rem] space-y-[.62rem]">
+            <img
+              class="size-[3rem]"
+              src="./assets/budget-planning.png"
+              alt=""
+            />
             <h4 class="text-xl font-extrabold">Supervision</h4>
             <p>
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
           </div>
-          <div
-            class="w-[17.18rem] rounded-2xl bg-[#77AAEA] p-[1.5rem] space-y-[.62rem]"
-          >
-            <img src="./assets/vision.png" alt="" />
+          <div class="rounded-2xl bg-[#77AAEA] p-[1.5rem] space-y-[.62rem]">
+            <img class="size-[3rem]" src="./assets/vision.png" alt="" />
             <h4 class="text-xl font-extrabold">Budget Planning</h4>
             <p>
               The barn house captivates with its blend of rustic charm and
@@ -442,6 +453,7 @@
           </div>
         </div>
       </div>
+      <!-- up done with responsive -->
       <!-- Our latest Portfolio -->
       <section>
         <div class="partha mx-auto text-center max-w-2xl">
