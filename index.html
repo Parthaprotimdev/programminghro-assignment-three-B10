@@ -647,13 +647,14 @@
         </div>
       </section>
 
-      <!-- up done with responsive -->
-
       <!-- Lets Discuss next projects -->
-      <section class="hide mx-auto bg-[url('/assets/bg.jpg')] bg-cover py-16">
-        <div class="mx-auto text-center w-[42.39rem]">
+
+      <section
+        class="mx-auto bg-[url('/assets/bg.jpg')] bg-cover py-8 md:py-[4.5rem] mt-8 md:mt-[4.5rem] lg:mt-[6.25rem] lg:py-[6.25rem] border-8 border-solid border-white"
+      >
+        <div class="wrapper flex flex-col items-center justify-center gap-y-4">
           <button
-            class="btn rounded-3xl text-base font-bold bg-lime-200 my-[1rem]"
+            class="btn rounded-3xl text-base font-bold text-[#494949] bg-lime-200 my-[1rem]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -671,75 +672,92 @@
             </svg>
             Let’s Connect
           </button>
-          <h1 class="text-4xl font-bold my-6">Let’s Discuss Next Project</h1>
-          <p class="text-base">
+
+          <h2
+            class="text-[#212121] font-bold text-center text-[1.5rem] leading-[2rem] md:text-[2rem] md:leading-[2.75rem] lg:text-[2.5rem] lg:leading-[3.5rem]"
+          >
+            Let’s Discuss Next Project
+          </h2>
+          <p
+            class="mt-2 mb-4 w-full max-w-[41rem] text-[#494949] font-medium text-center text-[0.875rem] leading-[1.5rem] md:text-[1rem] md:leading-[1.625rem]"
+          >
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
-        </div>
-        <div class="flex flex-row items-center gap-6 w-[60.62rem] mx-auto mt-5">
-          <input
-            class="w-[29.56rem] border border-solid border-[#E9E9E9] rounded-[6rem] bg-[#FFF] px-[1.25rem] py-[1.31rem]"
-            type="text"
-            placeholder="First Name*"
-          />
-          <input
-            class="w-[29.56rem] border border-solid border-[#E9E9E9] rounded-[6rem] bg-[#FFF] px-[1.25rem] py-[1.31rem]"
-            type="text"
-            placeholder="Last Name*"
-          />
-        </div>
-        <div class="w-[60.62rem] mx-auto flex flex-row items-center gap-6 my-5">
-          <input
-            class="w-[29.56rem] border border-solid border-[#E9E9E9] rounded-[6rem] bg-[#FFF] px-[1.25rem] py-[1.31rem]"
-            type="text"
-            placeholder="Phone Number*"
-          />
-          <input
-            class="w-[29.56rem] border border-solid border-[#E9E9E9] rounded-[6rem] bg-[#FFF] px-[1.25rem] py-[1.31rem]"
-            type="text"
-            placeholder="Email Number*"
-          />
-        </div>
 
-        <div class="mx-auto flex justify-center p-5 max-w-5xl">
-          <input
-            class="h-60 w-[60.62rem] border border-solid border-[#E9E9E9] rounded-[2rem] bg-[#FFF] text-start"
-            type="text"
-            placeholder="Write your message here"
-          />
-        </div>
-        <div class="mx-auto max-w-[969px]">
-          <button
-            class="bg-[#ABEF5F] text-xl font-extrabold min-w-full p-8 px-[1.5rem] py-[.75rem] rounded-[2rem] mx-auto mb-8 flex justify-center items-center gap-2 border border-[#ABEF5F]"
-          >
-            Send Mail
-            <svg
-              class="border border-solid border-black w-3 h- rounded-3xl"
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 14 14"
-              fill="none"
+          <!-- Form -->
+
+          <form action="" class="w-full flex flex-col gap-6 items-center">
+            <!-- First Row -->
+
+            <div
+              class="flex flex-col gap-y-5 md:flex-row w-full items-center justify-center gap-x-6"
             >
-              <path
-                d="M12.0016 1.74121L0.997989 12.7375"
-                stroke="#1C1C1C"
-                stroke-width="1.5"
-                stroke-linecap="round"
+              <input
+                type="text"
+                placeholder="First Name*"
+                class="input rounded-[4rem] w-full max-w-[29.5rem] border border-solid focus:outline-none border-[#E9E9E9]"
               />
-              <path
-                d="M6.00191 0.87079C6.00191 0.87079 11.6356 0.397774 12.4903 1.25297C13.3449 2.10817 12.868 7.74156 12.868 7.74156"
-                stroke="#1C1C1C"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+              <input
+                type="text"
+                placeholder="Last Name*"
+                class="input rounded-[4rem] w-full max-w-[29.5rem] border border-solid focus:outline-none border-[#E9E9E9]"
               />
-            </svg>
-          </button>
+            </div>
+
+            <!-- Second Row-->
+
+            <div
+              class="flex flex-col md:flex-row w-full items-center justify-center gap-6"
+            >
+              <input
+                type="text"
+                placeholder="Phone Number*"
+                class="input rounded-[4rem] w-full max-w-[29.5rem] border border-solid focus:outline-none border-[#E9E9E9]"
+              />
+              <input
+                type="text"
+                placeholder="Email Number*"
+                class="input rounded-[4rem] w-full max-w-[29.5rem] border border-solid focus:outline-none border-[#E9E9E9]"
+              />
+            </div>
+
+            <!-- Box -->
+
+            <textarea
+              placeholder="Write your message here"
+              class="textarea rounded-[2rem] w-full max-w-[60.6rem] border border-solid focus:outline-none border-[#E9E9E9] min-h-[15rem]"
+            ></textarea>
+            <button
+              class="btn btn-block max-w-[60.6rem] min-h-[3.5rem] rounded-[2rem] group text-clr-gray-7 font-extrabold text-xl bg-lime-300 border border-lime-400"
+            >
+              Send Mail
+              <div
+                class="btn btn-circle btn-sm bg-black hover:bg-black border-none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-white size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </div>
+            </button>
+          </form>
         </div>
       </section>
     </main>
+
+    <!-- up done with responsive -->
+
     <footer
       class="mx-auto footer bg-neutral text-neutral-content flex flex-col items-center pt-20"
     >
